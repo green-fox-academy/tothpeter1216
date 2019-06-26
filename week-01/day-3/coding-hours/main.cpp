@@ -7,7 +7,7 @@ int main() {
     int semesterCodingHours = semesterDays * dailyCodingHours;
     std::cout << "coding in a semester by an attendee: " << semesterCodingHours << std::endl;
     int weeklyWorkingHours = 52;
-    int semesterWorkingHours = weeklyWorkingHours * semesterWeeks;
+    float semesterWorkingHours = weeklyWorkingHours * semesterWeeks;
     float percentageOfCodingHours = semesterCodingHours / semesterWorkingHours * 100;
     std::cout << "percentage of the coding hours in the semester: " << percentageOfCodingHours << std::endl;
     return 0;
