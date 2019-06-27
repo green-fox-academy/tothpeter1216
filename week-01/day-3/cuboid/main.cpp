@@ -10,6 +10,6 @@ int main(int argc, char* args[]){
     std::cout << "Surface Area: " << surfaceOfCuboid << std::endl;
     std::cout << "Volume: " << volumeOfCuboid << std::endl;
 
-    
+
     return 0;
 }
