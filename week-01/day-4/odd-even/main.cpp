@@ -12,6 +12,6 @@ int main(int argc, char* args[]) {
             } else{
                 std::cout << "The number is odd" << std::endl;
             }
-            
+
     return 0;
 }
