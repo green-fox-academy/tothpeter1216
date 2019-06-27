@@ -16,6 +16,6 @@ int main(int argc, char* args[]) {
 
     std::cout << "Remaining seconds: " << remainingSeconds << std::endl;
 
-    
+
     return 0;
 }
