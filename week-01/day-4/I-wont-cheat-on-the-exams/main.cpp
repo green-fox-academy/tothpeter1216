@@ -10,6 +10,6 @@ int main(int arg, char* args[]) {
         std::cout << dontCheat << std::endl;
         sentenceCounter++;
     }
-    
+
     return 0;
 }
