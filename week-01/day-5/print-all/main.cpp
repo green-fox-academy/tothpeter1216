@@ -8,7 +8,7 @@ int main(int argc, char* args[]) {
     for (int i = 0; i < sizeof(numbers)/ sizeof(numbers[0]) ; ++i) {
         std::cout << numbers[i] << std::endl;
     }
-    
+
     return 0;
 }
 
