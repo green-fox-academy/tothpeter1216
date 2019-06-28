@@ -15,7 +15,7 @@ int main(int argc, char* args[]) {
 
 void greet(){
     std::cout << "Greetings dear, ";
-    
+
 }
 
 
