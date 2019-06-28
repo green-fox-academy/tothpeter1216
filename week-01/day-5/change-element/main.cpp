@@ -8,7 +8,7 @@ int main(int argc, char* args[]) {
     s[3] = 4;
 
     std::cout << s[3] << std::endl;
-    
+
     return 0;
 }
 
