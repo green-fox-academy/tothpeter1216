@@ -13,7 +13,7 @@ int main(int argc, char* args[])
 
     }
     std::cout << sumOfAi << std::endl;
-    
+
     return 0;
 }
 
