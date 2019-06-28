@@ -4,15 +4,15 @@
 int main(int argc, char* args[])
 {
 
-    int ai[] = {3, 4, 5, 6, 7};
-    int sumOfAi = 0;
-
-    for (int i = 0; i < sizeof(ai)/ sizeof(ai[i]) ; ++i) {
-
-        sumOfAi = sumOfAi + ai[i];
+   int ai[] = {3, 4, 5, 6, 7};
+   int sum = 0;
+    for (int i = 0; i < 5; ++i) {
+        sum = sum + ai[i];
+        if (i == 4){
+        std::cout << sum << std::endl;
+        }
 
     }
-    std::cout << sumOfAi << std::endl;
 
     return 0;
 }
