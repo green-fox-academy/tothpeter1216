@@ -11,7 +11,7 @@ int main(int argc, char* args[]) {
     if (sizeOfP1 < sizeOfP2){
         std::cout << "p2 is longer" << std::endl;
     }
-    
+
     return 0;
 }
 
