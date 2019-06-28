@@ -1,16 +1,17 @@
 #include <iostream>
+#include <string>
 
-int main()
+int main(std::string[], int)
 {
     std::string animal[] = {"koal", "pand", "zebr"};
-    std::string addedLetter = "a";
 
     for (int i = 0; i < sizeof(animal)/ sizeof(animal[0]) ; ++i) {
+        animal[i] = animal[i] += "a";
 
-        std::cout << animal[i] << "a" << std::endl;
+        std::cout << animal[i] << std::endl;
 
     }
-    
+
     return 0;
 }
 
