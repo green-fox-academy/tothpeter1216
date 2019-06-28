@@ -10,7 +10,7 @@ int main(int argc, char* args[]) {
         std::cout << numList[j] << std::endl;
 
     }
-    
+
     return 0;
 }
 
