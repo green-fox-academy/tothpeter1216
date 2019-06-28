@@ -3,20 +3,21 @@
 
 int main(int argc, char* args[]) {
 
-    int matrix[4][4] = {
-            {1, 0, 0, 0},
-            {0, 1, 0, 0},
-            {0, 0, 1, 0},
-            {0, 0, 0, 1}
-    };
+    int n = 4;
 
+    int twoDimensionalMatrix[n][n];
 
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if (i == j){
+                twoDimensionalMatrix[i][j] =1;
+                std::cout << twoDimensionalMatrix[i][j] << std::endl;
+            } else{
+                twoDimensionalMatrix[i][j] = 0;
+                std::cout << twoDimensionalMatrix[i][j];
+            }
 
-    for (int i = 0; i < 4; ++i) {
-        for (int j = 0; j < 4 ; ++j) {
-            std::cout << " " <<  i << j << " " << std::endl;
         }
-
     }
 
     return 0;
