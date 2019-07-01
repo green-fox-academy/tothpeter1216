@@ -27,7 +27,7 @@ int main(int argc, char* args[])
 
     nameList.clear();
     std::cout << nameList.size() << std::endl;
-    
+
 
     return 0;
 }
