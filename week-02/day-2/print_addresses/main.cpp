@@ -9,7 +9,7 @@ int main()
         std::cin >> fiveArray[i];
 
     }
-    
+
     for (int j = 0; j < 5; ++j) {
 
         std::cout << &fiveArray[j] << std::endl;
