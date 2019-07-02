@@ -49,7 +49,7 @@ int main(int argc, char* args[])
     listB.insert(listB.begin(), {"Passion Fruit", "Pomelo"});
 
     std::cout << "The third element of listA is " << listA[2] << std::endl;
-    
+
 //Create a list ('List A') which contains the following values
 //Apple, Avocado, Blueberries, Durian, Lychee
 //Create a new list ('List B') with the values of List A
