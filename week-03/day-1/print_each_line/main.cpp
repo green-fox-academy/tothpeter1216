@@ -15,11 +15,13 @@ int main()
     file.close();
 
     std::ifstream file2("../my-file.txt");
+    if (file2.is_open()){
     std::string line;
     std::cout << line << std::endl;
     while (std::getline(file2, line)) {
-        std::cout << line << std::endl;
-    }
+        std::cout << line <<  std::endl;
+    }}
+    file2.close();
 
     // Write a program that opens a file called "my-file.txt", then prints
     // each line from the file.
