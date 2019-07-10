@@ -10,7 +10,7 @@ std::cout << tiger.getHunger() << " " << tiger.getThirst() << std::endl;
 
 tiger.eat();
 tiger.drink();
-tiger.play();
+tiger.play()
     std::cout << tiger.getHunger() << " " << tiger.getThirst() << std::endl;
 
 
