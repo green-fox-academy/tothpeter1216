@@ -9,7 +9,7 @@ std::map<char, int> letterCounter(std::string word)
     std::map<char , int > dictionary;
 
     for (int i = 0; i < word.size(); ++i) {
-        dictionary[word.at(i)]++;
+        dictionary[word[i]]++;
     }
 
     return dictionary;
