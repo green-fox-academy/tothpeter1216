@@ -32,7 +32,7 @@ int main()
     } else {
         std::cout << "No, we do not konow." << std::endl;
     }
-        
+
 
     return 0;
 }
