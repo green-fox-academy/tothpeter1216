@@ -20,29 +20,6 @@ bool fileCopy(std::string firstFile, std::string secondFile){
     } else return false;
 }
 
-//bool fileCopy(std::string firstFile, std::string secondFile){
-//    std::ifstream file(firstFile);
-//    std::string textCopy;
-//    if (file.is_open()){
-//        while (std::getline(file, textCopy))
-//            std::cout << textCopy << std::endl;
-//
-//    }
-//    file.close();
-//
-//    std::ofstream file2(secondFile);
-//    if (file2.is_open()){
-//        file2 << textCopy;
-//        file2.close();
-//        return true;
-//    } else{
-//        return false;
-//    }
-//
-//
-//}
-
-
 int main() {
 
     std::string firstFile;
