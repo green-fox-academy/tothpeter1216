@@ -12,10 +12,10 @@ int main()
     Tree orange("orange");
     Garden garden;
 
-    garden.plantAdder(yellow);
-    garden.plantAdder(blue);
-    garden.plantAdder(purple);
-    garden.plantAdder(orange);
+    garden.plantAdder(&yellow);
+    garden.plantAdder(&blue);
+    garden.plantAdder(&purple);
+    garden.plantAdder(&orange);
 
 
     garden.needWaterPlants();

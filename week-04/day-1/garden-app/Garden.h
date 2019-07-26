@@ -17,7 +17,7 @@ class Garden
 public:
     void watering(int water);
 
-    void plantAdder(Plant &plant);
+    void plantAdder(Plant *plant);
 
     std::string needWaterPlants();
 

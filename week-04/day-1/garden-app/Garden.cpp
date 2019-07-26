@@ -27,9 +27,9 @@ void Garden::watering(int water)
 
 }
 
-void Garden::plantAdder(Plant &plant)
+void Garden::plantAdder(Plant *plant)
 {
-    _plantsOfGarden.push_back(&plant);
+    _plantsOfGarden.push_back(plant);
 }
 
 std::string Garden::needWaterPlants()
