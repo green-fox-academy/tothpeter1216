@@ -15,6 +15,6 @@ int main()
     printf("Hello, Levi!\n");
     printf("Hello, Kornel!\n");
     printf("Hello, Bence!\n");
-    
+
     return 0;
 }
