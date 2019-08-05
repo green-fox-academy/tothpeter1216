@@ -3,17 +3,17 @@
 
 #define PI 3.14
 
-double areaOfCircle(int radius);
+double area_of_circle(int radius);
 
 int main()
 {
 
     double rad = 5;
-    printf("Area: %f", areaOfCircle(rad));
+    printf("Area: %f", area_of_circle(rad));
 
     return 0;
 }
-double areaOfCircle(int radius)
+double area_of_circle(int radius)
 {
     int area = radius * radius * PI;
     return area;
