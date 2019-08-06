@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /*
 Create a sandwich struct
@@ -14,24 +16,26 @@ The parameters should be:
 
 struct Sandwich
 {
-    char name;
+    char name[256];
     float price;
     float weight;
 };
 
-int order(struct Sandwich sandwich, int ordered_sandwiches)
-{
-    int price_final = sandwich.price * sandwich.weight* ordered_sandwiches;
-    return price_final;
-}
+int order(struct Sandwich sandwich, int ordered_sandwiches);
 
 int main()
 {
 
     struct Sandwich sandwich;
-    sandwich.name = " szenya";
+    strcpy(sandwich.name, "szenya");
     sandwich.price = 10;
     sandwich.weight = 5;
-    printf("Price of the sandwiches: %d\n", order(sandwich, 3));
+    printf("Price of the sandwiches (%s): %d\n", sandwich.name, order(sandwich, 3));
     return 0;
+}
+
+int order(struct Sandwich sandwich, int ordered_sandwiches)
+{
+    int price_final = sandwich.price * sandwich.weight* ordered_sandwiches;
+    return price_final;
 }
