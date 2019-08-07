@@ -15,7 +15,7 @@ int main()
         pointer[i] = i;
         printf("%d\n", pointer[i]);
     }
-    
+
     free(pointer);
 
     return 0;
