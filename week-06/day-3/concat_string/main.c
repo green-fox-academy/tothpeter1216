@@ -26,7 +26,6 @@ int main()
 
     free(word1);
     free(word2);
-    free(newWord);
 
 
     return 0;
