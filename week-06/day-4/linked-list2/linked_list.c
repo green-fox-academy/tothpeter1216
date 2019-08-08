@@ -63,3 +63,13 @@ void insert(node_t *head, int data, int prev)
         }
     }
 }
+
+int size(node_t* head){
+    node_t *p = head;
+    int counter = 0;
+    while (p->next != NULL){
+        counter++;
+        p = p->next;
+    }
+    return counter +1;
+}

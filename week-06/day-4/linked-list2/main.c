@@ -14,6 +14,8 @@ int main()
     push_back(&head, 0);
 
     print(head);
+    printf("Size: %d\n", size(head));
+
     push_front(&head, 11);
 
     print(head);
@@ -21,6 +23,8 @@ int main()
     insert(head, 77, 1);
 
     print(head);
+
+    printf("Size: %d\n", size(head));
 
 
     return 0;
