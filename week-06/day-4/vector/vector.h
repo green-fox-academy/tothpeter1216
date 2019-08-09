@@ -21,11 +21,19 @@ void push_back(vect_t *vector, int new_data);
 
 int size(vect_t* vector);
 
-int capacity_of_vect(vect_t* vecor);
+int free_capacity(vect_t *vecor);
 
 void insert(vect_t* vector, int value, int position);
 
 void print(vect_t* vector);
+
+int max_size(vect_t* vector);
+
+int empty(vect_t* vector);
+
+void pop_back(vect_t* vector);
+
+void erase (vect_t* vector, int position);
 
 
 
