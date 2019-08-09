@@ -91,11 +91,30 @@ void erase(vect_t *vector, int position)
     }
 
     for (int i = 0; i < vector->size - position; ++i) {
-        vector->data[position + i] = vector->data[position + i + 1];
+        vector->data[position + i - 1] = vector->data[position + i];
     }
 
-
     vector->size--;
-
+    if (vector->size < vector->capacity / 2) {
+        vector->capacity = 0.75 * vector->capacity;
+        vector->data = realloc(vector->data, vector->capacity * sizeof(int));
+    }
 }
 
+int search(vect_t* vector, int value){
+    int is_in = 0;
+    int find = 0;
+    for (int i = 0; i < vector->size -1; ++i) {
+        if(vector->data[i] == value){
+            is_in = 1;
+            find = i;
+
+        }
+    }
+    if(is_in == 0){
+        return -1;
+    } else{
+        return find;
+    }
+
+}

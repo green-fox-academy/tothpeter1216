@@ -35,6 +35,8 @@ void pop_back(vect_t* vector);
 
 void erase (vect_t* vector, int position);
 
+int search(vect_t* vector, int value);
+
 
 
 

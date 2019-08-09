@@ -48,6 +48,8 @@ int main()
     printf("Max size: %d\n", max_size(&vector1));
     print(&vector1);
 
+    printf("The index of 10: %d", search(&vector1, 4));
+
 
     return 0;
 }
