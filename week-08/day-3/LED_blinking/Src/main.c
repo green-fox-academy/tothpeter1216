@@ -78,6 +78,7 @@ int main(void)
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
 
+  /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
 
@@ -107,7 +108,7 @@ int main(void)
 		  HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, 1);
 
 	  }
-	  if(timer_value == 500){
+	  if(timer_value == 1000){
 	  		  HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, 0);
 
 	  	  }
@@ -183,9 +184,9 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 10800-1;
+  htim2.Init.Prescaler = 42000-1; // (0.5/1000) / (1/84 000 000)
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 10000 -1;
+  htim2.Init.Period = 2000 -1; // 1 / (0.5 / 1000)
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)

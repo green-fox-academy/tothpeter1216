@@ -5600,7 +5600,7 @@ int main(void)
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
  80021fa:	f7fe f985 	bl	8000508 <HAL_Init>
-
+  /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
 
@@ -5645,9 +5645,9 @@ int main(void)
  8002228:	f7fe fc28 	bl	8000a7c <HAL_GPIO_WritePin>
 
 	  }
-	  if(timer_value == 500){
+	  if(timer_value == 1000){
  800222c:	88fb      	ldrh	r3, [r7, #6]
- 800222e:	f5b3 7ffa 	cmp.w	r3, #500	; 0x1f4
+ 800222e:	f5b3 7f7a 	cmp.w	r3, #1000	; 0x3e8
  8002232:	d1ef      	bne.n	8002214 <main+0x20>
 	  		  HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, 0);
  8002234:	2200      	movs	r2, #0
@@ -5835,17 +5835,17 @@ static void MX_TIM2_Init(void)
  800234a:	4b2c      	ldr	r3, [pc, #176]	; (80023fc <MX_TIM2_Init+0xe4>)
  800234c:	f04f 4280 	mov.w	r2, #1073741824	; 0x40000000
  8002350:	601a      	str	r2, [r3, #0]
-  htim2.Init.Prescaler = 10800-1;
+  htim2.Init.Prescaler = 42000-1;
  8002352:	4b2a      	ldr	r3, [pc, #168]	; (80023fc <MX_TIM2_Init+0xe4>)
- 8002354:	f642 222f 	movw	r2, #10799	; 0x2a2f
+ 8002354:	f24a 420f 	movw	r2, #41999	; 0xa40f
  8002358:	605a      	str	r2, [r3, #4]
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
  800235a:	4b28      	ldr	r3, [pc, #160]	; (80023fc <MX_TIM2_Init+0xe4>)
  800235c:	2200      	movs	r2, #0
  800235e:	609a      	str	r2, [r3, #8]
-  htim2.Init.Period = 10000 -1;
+  htim2.Init.Period = 2000 -1;
  8002360:	4b26      	ldr	r3, [pc, #152]	; (80023fc <MX_TIM2_Init+0xe4>)
- 8002362:	f242 720f 	movw	r2, #9999	; 0x270f
+ 8002362:	f240 72cf 	movw	r2, #1999	; 0x7cf
  8002366:	60da      	str	r2, [r3, #12]
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
  8002368:	4b24      	ldr	r3, [pc, #144]	; (80023fc <MX_TIM2_Init+0xe4>)
