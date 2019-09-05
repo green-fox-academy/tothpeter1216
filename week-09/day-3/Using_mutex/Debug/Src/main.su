@@ -1,0 +1,8 @@
+main.c:76:5:main	80	static
+main.c:163:6:SystemClock_Config	88	static
+main.c:207:13:MX_GPIO_Init	48	static
+main.c:240:6:StartDefaultTask	16	static
+main.c:264:6:StartTurnOn	16	static
+main.c:290:6:StartTurnOff	16	static
+main.c:316:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:333:6:Error_Handler	4	static
