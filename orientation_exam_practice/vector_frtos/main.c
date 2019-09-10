@@ -6,6 +6,7 @@ int main()
 {
     vector_t my_vector;
     init(&my_vector);
+    printf("Free capacity: %d\n", free_capacity(&my_vector));
     push_back(&my_vector, 10);
     printf("Free capacity: %d\n", free_capacity(&my_vector));
     push_back(&my_vector, 11);
@@ -49,6 +50,7 @@ int main()
     printf("A lot of data: \n");
     print(&my_vector);
 
+    printf("Free capacity: %d\n", free_capacity(&my_vector));
 
 
     return 0;

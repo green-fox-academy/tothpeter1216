@@ -7,8 +7,9 @@
 
 void init(vector_t *vector)
 {
-    vector->capacity = 2;
-    vector->data = (int *) malloc(vector->capacity * sizeof(int));
+    //vector->capacity = 2;
+    vector->capacity = 0;
+    //vector->data = (int *) malloc(vector->capacity * sizeof(int));
     vector->size = 0;
 
 }
@@ -21,7 +22,8 @@ void push_back(vector_t *vector, int new_data)
         vector->data = realloc(vector->data, vector->capacity * sizeof(int));
     }*/
     if (vector->capacity <= vector->size) {
-        vector->capacity = vector->capacity * 2;
+        //vector->capacity = vector->capacity * 2;
+        vector->capacity = vector->capacity + 10;
 
         int *temp = vector->data;
         vector->data = (int *) malloc(vector->capacity * sizeof(int));
@@ -47,7 +49,8 @@ void push_front(vector_t *vector, int new_data)
     vector->size++;
 
     if (vector->capacity <= vector->size) {
-        vector->capacity = vector->capacity * 2;
+        //vector->capacity = vector->capacity * 2;
+        vector->capacity = vector->capacity + 10;
 
         int *temp = vector->data;
         vector->data = (int *) malloc(vector->capacity * sizeof(int));
@@ -97,7 +100,8 @@ void insert(vector_t *vector, int value, int position)
     }*/
 
     if (vector->capacity <= vector->size) {
-        vector->capacity = vector->capacity * 2;
+        //vector->capacity = vector->capacity * 2;
+        vector->capacity = vector->capacity + 10;
 
         int *temp = vector->data;
         vector->data = (int *) malloc(vector->capacity * sizeof(int));
