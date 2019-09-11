@@ -1,0 +1,14 @@
+vector.c:3:6:init	16	static
+vector.c:11:6:push_back	24	static
+vector.c:35:6:push_front	32	static
+vector.c:58:6:pop_front	24	static
+vector.c:68:5:size	16	static
+vector.c:72:5:free_capacity	16	static
+vector.c:76:6:insert	40	static
+vector.c:104:6:print	24	static
+vector.c:114:5:max_size	16	static
+vector.c:118:5:empty	16	static
+vector.c:126:6:pop_back	16	static
+vector.c:133:6:erase	24	static
+vector.c:146:5:search	32	static
+vector.c:164:5:average	32	static
