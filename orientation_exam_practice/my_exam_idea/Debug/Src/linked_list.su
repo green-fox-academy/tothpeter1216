@@ -1,0 +1,10 @@
+linked_list.c:9:6:init	16	static
+linked_list.c:14:6:push_back	24	static
+linked_list.c:35:5:is_empty	16	static
+linked_list.c:40:6:print	16	static
+linked_list.c:50:6:push_front	24	static
+linked_list.c:58:5:size	24	static
+linked_list.c:71:6:insert	40	static
+linked_list.c:88:5:pop_back	24	static
+linked_list.c:108:6:pop_front	24	static
+linked_list.c:119:6:delete_index	24	static
