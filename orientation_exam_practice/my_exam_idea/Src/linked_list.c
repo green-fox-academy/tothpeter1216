@@ -92,7 +92,7 @@ int pop_back(node_t** head){
        // printf("Last element");
         //ptr == NULL;
         deleted = ptr->data;
-        //vPortFree((void*)head);
+        vPortFree((void*)head);
         *head = NULL;
         return deleted;
     }
